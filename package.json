@@ -1,0 +1,69 @@
+{
+  "name": "devscard",
+  "description": "Template for creating a comprehensive virtual CV for developers.",
+  "version": "0.1.4",
+  "private": true,
+  "engines": {
+    "node": ">=14",
+    "npm": ">=6",
+    "yarn": "please-use-npm",
+    "pnpm": "please-use-npm"
+  },
+  "scripts": {
+    "postinstall": "npm run generate-favicons",
+    "dev": "astro dev",
+    "prebuild": "move-file ./src/pages/pdf.astro ./src/pages/_pdf.astro && npm run generate-favicons",
+    "build": "astro build",
+    "postbuild": "move-file ./src/pages/_pdf.astro ./src/pages/pdf.astro",
+    "preview": "astro preview",
+    "generate-pdf": "ts-node scripts/generate-pdf.ts",
+    "generate-favicons": "ts-node scripts/generate-favicons.ts",
+    "prett:iercheck": "prettier --check . --ignore-path .gitignore",
+    "prettier:write": "prettier --write . --ignore-path .gitignore",
+    "astro:check": "astro check",
+    "ts:check": "tsc --jsx preserve --skipLibCheck",
+    "check": "concurrently npm:*:check"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "1.2.5",
+    "iconify-icon": "1.0.7",
+    "nanoid": "4.0.2"
+  },
+  "devDependencies": {
+    "@astrojs/image": "0.16.2",
+    "@astrojs/react": "2.1.0",
+    "@astrojs/tailwind": "3.1.1",
+    "@percy/cli": "1.21.0",
+    "@types/marked": "4.0.8",
+    "astro": "2.1.7",
+    "astro-compress": "1.1.35",
+    "concurrently": "7.6.0",
+    "date-fns": "2.29.3",
+    "favicons": "7.1.1",
+    "iconify-icon-names": "1.1.0",
+    "immer": "9.0.21",
+    "locales-ts": "1.0.0",
+    "marked": "4.3.0",
+    "move-file-cli": "3.0.0",
+    "photoswipe": "5.3.6",
+    "postcss": "8.4.21",
+    "prettier": "2.8.7",
+    "prettier-plugin-astro": "0.8.0",
+    "prettier-plugin-tailwindcss": "0.2.5",
+    "puppeteer": "19.8.0",
+    "puppeteer-report": "3.1.0",
+    "rollup-plugin-visualizer": "5.9.0",
+    "tailwindcss": "3.2.7",
+    "ts-node": "10.9.1",
+    "type-fest": "3.7.1",
+    "typescript": "5.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonradSzwarc/devscard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KonradSzwarc/devscard/issues"
+  },
+  "homepage": "https://github.com/KonradSzwarc/devscard#readme"
+}
