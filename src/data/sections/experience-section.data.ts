@@ -29,12 +29,12 @@ const experienceSectionData = {
       image: import('@/assets/logos/tatvasoft-logo.png'),
       dates: [new Date('2021-01'), null],
       description: `
-        - In tristique vulputate augue vel egestas.
-        - Quisque ac imperdiet tortor, at lacinia ex.
-        - Duis vel ex hendrerit, commodo odio sed, aliquam enim.
-        - Ut arcu nulla, tincidunt eget arcu eget, molestie vulputate nisi.
-        - Nunc malesuada leo et est iaculis facilisis.
-        - Fusce eu urna ut magna malesuada fringilla.
+        - Developed software solutions using React JS, JavaScript, TypeScript, ans Redux.
+        - Collaborated with product managers, designers, developers, and QA to deliver high-quality software solutions.
+        - Developed reusable UI components for web applications. 
+        - Ensured cross-browser compatibility and accessibility of web applications.
+        - Contributed to improving website performance and optimizing the user experience through techniques such as lazy loading and code optimization.
+        - Created and maintained documentation for code and web application functionality.
       `,
       tagsList: {
         title: 'Technologies',

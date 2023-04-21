@@ -16,7 +16,7 @@ const mainSectionData = {
     { label: 'Phone', value: '+91 7265876797', url: 'tel:+91 7265876797' },
     { label: 'Email', value: 'jeetdesai149@gmail.com', url: 'mailto:jeetdesai149@gmail.com' },
     { label: 'From', value: 'Gujarat, India' },
-    { label: 'Salary range', value: '8,00,000 - 10,00,000 INR' },
+    // { label: 'Salary range', value: '8,00,000 - 10,00,000 INR' },
   ],
   pdfDetails: [
     { label: 'Phone', value: '+91 7265876797' },
